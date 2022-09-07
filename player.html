@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="player.css" rel="stylesheet" type="text/css" />
+    <title>my music</title>
+</head>
+
+<body>
+    <div class="player">
+        <div class="player__header">
+            <div class="player__img player__img--absolute slider">
+                <button class="player__button player__button--absolute--nw playlist">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon" />
+                </button>
+                <button class="player__button player__button--absolute--center play">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon" />
+                    <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon" />
+                </button>
+                <div class="slider__content">
+                    <img class="img slider__img" src="img/KISS.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/devuelveme a mi chica.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/maxresdefault.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/That's What I Like.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/redbone.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/feel good inc.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/stolen dance.jpg" alt="cover" />
+                    
+                    <img class="img slider__img" src="img/stress out.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/Ed-Sheeran-Shape-of-You.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/The-Chainsmokers-Something-Just-Like-This.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/yo x ti.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/soulchef.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/out of.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/uno.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/cyp.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/havana.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/undertale.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/eve.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/Patience.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/mi histo.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/penyaiir.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/Rhapsody_dawn_of_victory.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/no lie.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/taylor.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/discord.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/die.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/nirvana.jpg" alt="cover" />
+                    <img class="img slider__img" src="img/ride.jpg" alt="cover" />
+                </div>
+            </div>
+
+            <div class="player__controls">
+                <button class="player__button back">
+                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon" />
+                </button>
+                <p class="player__context slider__context">
+                    <strong class="slider__name"></strong>
+                    <span class="player__title slider__title"></span>
+                </p>
+                <button class="player__button next">
+                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon" />
+                </button>
+                <div class="progres">
+                    <div class="progres__filled"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="player__playlist list">
+            <li class="player__song">
+                <img class="player__img img" src="img/KISS.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">I Was Made For Lovin' You</b>
+                    <span class="flex">
+                        <span class="player__title">KISS</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio"
+                    src="Musica/010 - KISS - I Was Made For Lovin' You.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/devuelveme a mi chica.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Devuélveme a mi chica</b>
+                    <span class="flex">
+                        <span class="player__title">Hombres G</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/017 - Hombres G - Devuélveme a mi chica.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/maxresdefault.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Por Ti</b>
+                    <span class="flex">
+                        <span class="player__title">3AM</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/044 - 3AM - Por Ti.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/That's What I Like.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">That's What I Like</b>
+                    <span class="flex">
+                        <span class="player__title">Bruno Mars</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/048 - Bruno Mars - That's What I Like.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/redbone.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Redbone</b>
+                    <span class="flex">
+                        <span class="player__title">Childish Gambino</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/050 - Childish Gambino - Redbone.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/feel good inc.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Feel Good Inc</b>
+                    <span class="flex">
+                        <span class="player__title">Gorillaz</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/052 - Gorillaz - Feel Good Inc.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/stolen dance.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Stolen Dance </b>
+                    <span class="flex">
+                        <span class="player__title">Milky Chance</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/061 - Milky Chance - Stolen Dance.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/stress out.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Stressed Out</b>
+                    <span class="flex">
+                        <span class="player__title">Twenty One Pilots</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/065 - Twenty One Pilots - Stressed Out.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/Ed-Sheeran-Shape-of-You.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Shape of You</b>
+                    <span class="flex">
+                        <span class="player__title">Ed Sheeran</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/125 - Ed Sheeran - Shape of You.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/The-Chainsmokers-Something-Just-Like-This.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Something Just Like This</b>
+                    <span class="flex">
+                        <span class="player__title">Coldplay</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/126 - Coldplay - Something Just Like This.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/yo x ti.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Yo x Ti, Tu x Mi</b>
+                    <span class="flex">
+                        <span class="player__title">ROSALÍA</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/164 - ROSALÍA - Yo x Ti, Tu x Mi.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/soulchef.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Write This Down</b>
+                    <span class="flex">
+                        <span class="player__title">Soulchef</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/329 - Soulchef - Write This Down (feat. Nieve).mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/out of.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Out Of Love</b>
+                    <span class="flex">
+                        <span class="player__title">Alessia Cara</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Alessia Cara - Out Of Love.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/uno.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">UNO </b>
+                    <span class="flex">
+                        <span class="player__title">Alex Zurdo</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Alex Zurdo - UNO (feat. Alex Zurdo, Funky, Redimi2, Christian Ponce, Almighty, Ander Bock).mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/cyp.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Cypher 4</b>
+                    <span class="flex">
+                        <span class="player__title">BTS</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/BTS - BTS Cypher 4.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/havana.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Havana</b>
+                    <span class="flex">
+                        <span class="player__title">Camila Cabello</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Camila Cabello - Havana (feat. Young Thug).mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/undertale.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Fallen Down</b>
+                    <span class="flex">
+                        <span class="player__title">Duncan Cox</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Duncan Cox - Fallen Down.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/eve.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Dramaturgy</b>
+                    <span class="flex">
+                        <span class="player__title">Eve</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Eve - Dramaturgy.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/Patience.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Patience</b>
+                    <span class="flex">
+                        <span class="player__title">Guns N' Roses</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Guns N' Roses - Patience.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/mi histo.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Mi Historia</b>
+                    <span class="flex">
+                        <span class="player__title">Papi Wilo</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Papi Wilo - Mi Historia.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/penyaiir.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Señor Extraterrestre </b>
+                    <span class="flex">
+                        <span class="player__title">Penyair</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Penyair - Semana 8 - Señor Extraterrestre.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/Rhapsody_dawn_of_victory.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Dawn of Victory</b>
+                    <span class="flex">
+                        <span class="player__title">Rhapsody of Fire</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Rhapsody of Fire - Dawn of Victory.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/no lie.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">No Lie</b>
+                    <span class="flex">
+                        <span class="player__title">Sean Paul</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Sean Paul - No Lie.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/taylor.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Don’t Blame Me</b>
+                    <span class="flex">
+                        <span class="player__title">Taylor Swift</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Taylor Swift - Don’t Blame Me.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/discord.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Discord</b>
+                    <span class="flex">
+                        <span class="player__title">The Living Tombstone</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/The Living Tombstone - Discord.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/die.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Die For You</b>
+                    <span class="flex">
+                        <span class="player__title">The Weeknd</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/The Weeknd - Die For You.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/nirvana.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Smells Like Teen Spirit</b>
+                    <span class="flex">
+                        <span class="player__title">Nirvana</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/005 - Nirvana - Smells Like Teen Spirit.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="img/ride.jpg" alt="cover" />
+                <p class="player__context">
+                    <b class="player__song-name">Ride </b>
+                    <span class="flex">
+                        <span class="player__title">Twenty One Pilots</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="Musica/Twenty One Pilots - Ride.mp3"></audio>
+            </li>
+        </ul>
+    </div>
+    <script src="/player.js"></script>
+</body>
+
+</html>
